@@ -5,7 +5,13 @@ public enum TicketType {
     ADULT(2000),
     SENIOR(1500);
 
-    private TicketType(){
-        
+    private double price;
+
+    private TicketType(double price){
+        this.price = price;
+    }
+
+    public double getPrice(){
+        return price;
     }
 }

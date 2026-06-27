@@ -1,6 +1,6 @@
 package com.codecool;
 
-public class Ticket {
+public abstract class Ticket {
     private int seatNumber;
     private double price;
 }
