@@ -1,14 +1,14 @@
 package com.codecool;
 
-public class GroupTicket {
+public class GroupTicket extends Ticket{
     private int groupSize;
-    private int seatNumber;
 
     public GroupTicket(int seatNumber, int people){
-        this.seatNumber = seatNumber;
+        super(seatNumber, 0);
         this.groupSize = people;
     }
 
+    @Override
     public double getPrice(){
         return groupSize * 1800;
     }

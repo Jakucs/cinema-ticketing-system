@@ -1,13 +1,13 @@
 package com.codecool;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Screening {
     private Movie movie;
-    private String movieName;
     private LocalDate date;
-    private List<Ticket> soldTickets;
+    private List<Ticket> soldTickets = new ArrayList<>();
 
     public Screening(Movie movie, LocalDate date){
         this.movie = movie;
