@@ -18,10 +18,23 @@ public class Screening {
         soldTickets.add(ticket);
     }
 
-/*    public double calculateScreeningIncome(){
+    public double calculateScreeningIncome(){
         double total = 0;
         for(Ticket soldTicket : soldTickets){
-            total+=soldTicket.
+            total+=soldTicket.getPrice();
         }
-    }*/
+        return total;
+    }
+
+    public String getMovieTitle(){
+        return movie.getTitle();
+    }
+
+    public Genre getGenre(){
+        return movie.getGenre();
+    }
+
+    public double getDuration(){
+        return movie.getDuration();
+    }
 }

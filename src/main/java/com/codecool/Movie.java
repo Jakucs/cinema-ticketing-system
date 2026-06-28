@@ -10,4 +10,16 @@ public class Movie {
         this.genre = genre;
         this.duration = duration;
     }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public Genre getGenre(){
+        return genre;
+    }
+
+    public double getDuration(){
+        return duration;
+    }
 }

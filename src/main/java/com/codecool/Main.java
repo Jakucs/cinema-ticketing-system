@@ -1,6 +1,7 @@
 package com.codecool;
 
 import java.time.LocalDate;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -87,6 +88,27 @@ public class Main {
         screening6.addTicket(new GroupTicket(20, 10));
         screening6.addTicket(new GroupTicket(30, 7));
 
+        Cinema cinema = new Cinema("ETELE mozi");
+        cinema.addScreening(screening);
+        cinema.addScreening(screening2);
+        cinema.addScreening(screening3);
+        cinema.addScreening(screening4);
+        cinema.addScreening(screening5);
+        cinema.addScreening(screening6);
+
+
+
+/*        System.out.println(screening5.calculateScreeningIncome());
+        System.out.println(screening5.getMovieTitle());
+        System.out.println(screening5.getGenre());
+        System.out.println(screening5.getDuration());*/
+
+        System.out.println(cinema.calculateTotalIncomeFromAllScreenings());
+        List<Screening> screeningsBySpecificGenre = cinema.getScreeningsOfASpecificGenre(Genre.HORROR);
+        System.out.println(screeningsBySpecificGenre.size());
+        for(Screening screening10 : screeningsBySpecificGenre){
+            System.out.println(screening10.getMovieTitle());
+        }
 
 
     }
