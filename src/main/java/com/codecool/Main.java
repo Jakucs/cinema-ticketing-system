@@ -37,11 +37,11 @@ public class Main {
         Movie movie6 = new Movie("The worker", Genre.ACTION, 114);
 
         Screening screening = new Screening(movie, LocalDate.of(2026, 06, 29));
-        Screening screening2 = new Screening(movie, LocalDate.of(2026, 07, 8));
-        Screening screening3 = new Screening(movie, LocalDate.of(2026, 06, 30));
-        Screening screening4 = new Screening(movie, LocalDate.of(2026, 07, 1));
-        Screening screening5 = new Screening(movie, LocalDate.of(2026, 07, 7));
-        Screening screening6 = new Screening(movie, LocalDate.of(2026, 07, 3));
+        Screening screening2 = new Screening(movie2, LocalDate.of(2026, 07, 8));
+        Screening screening3 = new Screening(movie3, LocalDate.of(2026, 06, 30));
+        Screening screening4 = new Screening(movie4, LocalDate.of(2026, 07, 1));
+        Screening screening5 = new Screening(movie5, LocalDate.of(2026, 07, 7));
+        Screening screening6 = new Screening(movie6, LocalDate.of(2026, 07, 3));
 
 // Screening 1
         screening.addTicket(new RegularTicket(1, TicketType.ADULT));
